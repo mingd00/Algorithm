@@ -12,7 +12,7 @@ def permutation_input(vlist, visited):
             permutation_input(vlist + [sorted_list[i]], visited)
             visited[i] = 0
             
-def sort(input_list):
+def sort_list(input_list):
     sorted_list = sorted(input_list)
     return sorted_list
 
@@ -20,6 +20,6 @@ if __name__ == "__main__":
     vlist = []
     n, m = map(int, input().split())
     input_list = list(map(int, input().split()))
-    sorted_list = sort(input_list)
+    sorted_list = sort_list(input_list)
     visited = [ 0 for _ in range(n) ]
     permutation_input(vlist, visited)

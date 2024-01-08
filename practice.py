@@ -1,14 +1,4 @@
-n = 3
-
-graph = [[0]*n for _ in range(n)]
+row, col, h = map(int, input().split())
+graph = [list(map(int, input().split())) for _ in range(col * 2)] 
 
 print(graph)
-
-graph2 = [[0]*n] * n
-
-print(graph2)
-
-graph3 = [[0]*n]
-
-print(graph3)
-

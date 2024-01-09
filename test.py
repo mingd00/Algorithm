@@ -1,9 +1,8 @@
 import sys 
 input = sys.stdin.readline
 
-def check() :
+def main() :
     pass
 
-if __name__ == "__main__" :
-    
-    check()
+if __name__ == "__main__" : 
+    main()

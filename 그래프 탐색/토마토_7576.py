@@ -4,7 +4,7 @@ from collections import deque
 
 def tomato_bfs(w, h, graph, dx, dy):
     que = deque()
-    #익은 배추 위치 체크
+    #익은 토마토 위치 체크
     for i in range(h):
         for j in range(w):
             if graph[i][j] == 1:

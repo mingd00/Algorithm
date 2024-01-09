@@ -1,5 +1,6 @@
 import sys
 input = sys.stdin.readline
+import copy
 from collections import deque
 
 def check_bfs(n, graph, dx, dy, x, y, start):
@@ -34,6 +35,8 @@ def main():
     
     # 적록색약 리스트 새로 생성('R', 'G' -> 'C')
     color_blindness_graph = [['0']*n for _ in range(n)]
+    # 그냥 copy를 하면 원래 graph 값이 바뀜
+    # color_blindness_graph = copy.deepcopy(graph)
 
     for j in range(n):
         for i in range(n):

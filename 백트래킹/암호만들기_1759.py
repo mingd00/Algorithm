@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-def dfs(start, answer, L, C, words, vowel):
+def backtracking(start, answer, L, C, words, vowel):
     # 모음
     vowel_count = 0
     # 자음
@@ -21,7 +21,7 @@ def dfs(start, answer, L, C, words, vowel):
     
     for i in range(start, C):
         answer.append(words[i])
-        dfs(i+1, answer, L, C, words, vowel)
+        backtracking(i+1, answer, L, C, words, vowel)
         answer.pop()
          
 def main():
@@ -33,7 +33,7 @@ def main():
     L, C = map(int, input().split())
     words = sorted(list(input().rstrip().split()))
     
-    dfs(0, answer, L, C, words, vowel)
+    backtracking(0, answer, L, C, words, vowel)
  
 if __name__ == "__main__":
     main()

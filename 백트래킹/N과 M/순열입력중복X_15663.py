@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-def permutation_input_same_number(vlist):
+def permutation_input_unduplicated(vlist):
     global answer
     if len(vlist) == m:
         answer.append(vlist)
@@ -10,7 +10,7 @@ def permutation_input_same_number(vlist):
     for i in range(n):
         if visited[i] == 0:
             visited[i] = 1
-            permutation_input_same_number(vlist + [input_list[i]])
+            permutation_input_unduplicated(vlist + [input_list[i]])
             visited[i] = 0
 
 if __name__ == "__main__":
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     input_list = list(map(int,input().split()))
     input_list.sort()
     visited = [ 0 for _ in range(n) ]
-    permutation_input_same_number(vlist)
+    permutation_input_unduplicated(vlist)
     set_of_tuple = sorted(list(set(map(tuple, answer))))
     for i in set_of_tuple:
         print(*i)

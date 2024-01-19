@@ -41,7 +41,7 @@ def dfs(index):
 if __name__ == "__main__":
     graph = [list(map(int, input().rstrip())) for _ in range(9)]
     blank = []
-    print(graph)
+
     for i in range(9):
         for j in range(9):
             if graph[i][j] == 0:

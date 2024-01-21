@@ -8,7 +8,6 @@ def dac(a, b, c):
         return (dac(a, b//2, c)**2) % c
     else:
         return ((dac(a, b//2, c)**2))*a % c
-    
 
 def main():
     a, b, c = map(int, input().split())

@@ -1,6 +1,6 @@
 from collections import deque
 
+q = deque((0, 0))
+a = q.popleft()
 
-a = deque([1, 2, 3, 4])
-a.insert(2, 8)
 print(a)

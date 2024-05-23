@@ -33,7 +33,7 @@ def move(y, x, direc, graph_copy):
                 continue
             graph_copy[ny][nx] = '#'
             
-# 사각지대 구하기
+# 사각지대 구하기 -> 여러 개의 답 중 가장 최솟값으로 업데이트
 def zero_cnt(graph_copy):
     global ans
     cnt = 0

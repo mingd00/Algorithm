@@ -1,6 +1,5 @@
 ## "파이썬은 모든 것이 객체다(Everything is an object in Python)”
 
-- print
     
     ```python
     #구분자 지정: sep

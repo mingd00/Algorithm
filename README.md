@@ -506,7 +506,8 @@ print(result) -> True
 </details>
 
 
-<details>시간 복잡도, 공간 복잡도<<summaryy
+<details>
+<summary>시간 복잡도, 공간 복잡도</summary>
     
 - 시간 복잡도: 연산 횟수
   - 1초 2,000만 개(20*10^7) ~ 1억 개(10^8)

@@ -36,7 +36,7 @@ print(f'{idx + 1}: {fruit}') -> 2: Apple
 #[1,2,3,4,5]를 deque에 넣기
 
 import sys 
-input = sys.stdin.readline
+input = sys.stdin.readline # 버퍼를 사용하여 한 번에 읽어오기 때문에 빠르게 처리 가능 
 from collections import deque
 
 deque(input().rstrip()[1:-1].split(","))

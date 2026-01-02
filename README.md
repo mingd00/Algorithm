@@ -52,6 +52,8 @@ import sys
 input = sys.stdin.readline
 
 list(map(int, list(input().rstrip())))
+
+-> int 변환이나 split을 사용할 때는 공백 제거 로직을 추가하지 않아도 됨
 ```
 
 </details>

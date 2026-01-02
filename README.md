@@ -527,11 +527,5 @@ print(result) -> True
   - int 요소 1개: 4~8byte
   - 1MB = 약 25만 개 정수, 128MB = 약 1,500만 개~3,000만 개 정수
 
-```
-str = 'hojun ddong'
-result = str.endswitch('ddong')
-print(result) -> True
-```
-
 </details>
 
